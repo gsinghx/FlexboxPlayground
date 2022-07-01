@@ -26,6 +26,8 @@ window.onload = function () {
       }
 
       document.querySelector("."+path).style.display='block'
+      document.querySelector("."+path).style.padding='20px'
+      document.querySelector("."+path+" li").style.display='none'
       document.querySelector("."+path+" code").style.marginBottom='0px'
       break;
     case 'align-self':
@@ -44,6 +46,8 @@ window.onload = function () {
       }
 
       document.querySelector("."+path).style.display='block'
+      document.querySelector("."+path).style.padding='20px'
+      document.querySelector("."+path+" li").style.display='none'
       document.querySelector("."+path+" code").style.marginBottom='0px'
       break;
     case 'playground':
@@ -51,6 +55,7 @@ window.onload = function () {
       document.querySelector(".playground h1").style.display='none';
       playgroundElement.style.flexDirection="column";
       playgroundElement.style.marginBottom="0px";
+      playgroundElement.style.padding="20px";
       document.querySelector(".playground-controls").style.width='100%';
       document.querySelector(".playground .output").style.width='100%';
       document.querySelector("."+path+" code").style.marginBottom='0px'

@@ -1,3 +1,6 @@
+body{
+  font-family: "Open Sans", sans-serif;
+}
 .controls {
   margin-bottom: 10px;
 }
@@ -14,7 +17,7 @@
   background: #242739;
   padding: 10px;
   border: 1px solid rgba(0,0,0,0.5);
-  box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.7) 0px 4px 10px 0px;
   margin-top: 15px;
 }
 /* .container::before{
