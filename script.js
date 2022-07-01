@@ -17,12 +17,16 @@ window.onload = function () {
       playgroundElement.style.display = 'none';
       itemsElement.style.display = 'none';
       document.querySelector(".flex-container h1").style.display='none';
+      mainElement.style.marginBottom = "0px"
+      containerElement.style.width = "100%";
+      containerElement.style.marginBottom="0px";
 
       for(let i=0; i<containerChilddrenElements.length; i++){
         containerChilddrenElements[i].style.display = 'none';
       }
 
       document.querySelector("."+path).style.display='block'
+      document.querySelector("."+path+" code").style.marginBottom='0px'
       break;
     case 'align-self':
     case 'flex-grow':
@@ -31,16 +35,26 @@ window.onload = function () {
       playgroundElement.style.display = 'none';
       containerElement.style.display = 'none';
       document.querySelector(".flex-items h1").style.display='none';
+      mainElement.style.marginBottom = "0px"
+      itemsElement.style.width = "100%";
+      itemsElement.style.marginBottom="0px";
 
       for(let i=0; i<itemsChildrenElements.length; i++){
         itemsChildrenElements[i].style.display = 'none';
       }
 
       document.querySelector("."+path).style.display='block'
+      document.querySelector("."+path+" code").style.marginBottom='0px'
       break;
     case 'playground':
       mainElement.style.display = 'none';
-      document.querySelector(".playground h1").style.display='none'
+      document.querySelector(".playground h1").style.display='none';
+      playgroundElement.style.flexDirection="column";
+      playgroundElement.style.marginBottom="0px";
+      document.querySelector(".playground-controls").style.width='100%';
+      document.querySelector(".playground .output").style.width='100%';
+      document.querySelector("."+path+" code").style.marginBottom='0px'
+
       break;
   }
 }
