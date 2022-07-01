@@ -1,0 +1,415 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="flex-container">
+      <h1>Flex Container properties</h1>
+      <br />
+      <div class="flex-direction">
+        <div class="controls">
+          <li>flex-direction</li>
+          <div>
+            <input name="flex-direction" type="radio" class="flex-direction" id="flex-direction1" value="row"
+              checked /><label for="flex-direction1">row</label>
+            <input name="flex-direction" type="radio" class="flex-direction" id="flex-direction2"
+              value="row-reverse" /><label for="flex-direction2">row-reverse</label>
+            <input name="flex-direction" type="radio" class="flex-direction" id="flex-direction3"
+              value="column" /><label for="flex-direction3">column</label>
+            <input name="flex-direction" type="radio" class="flex-direction" id="flex-direction4"
+              value="column-reverse" /><label for="flex-direction4">column-reverse</label>
+          </div>
+        </div>
+        <div class="container">
+          <div class="item one">Item #1</div>
+          <div class="item two">Item #2</div>
+          <div class="item three">Item #3</div>
+        </div>
+        <code>.container {
+  flex-direction: row;
+}</code>
+      </div>
+
+      <div class="align-items">
+        <div class="controls">
+          <li>align-items</li>
+          <div>
+            <input name="align-items" type="radio" class="align-items" id="align-items1" value="flex-start"
+               /><label for="align-items1">flex-start</label>
+            <input name="align-items" type="radio" class="align-items" id="align-items2" value="flex-end" /><label
+              for="align-items2">flex-end</label>
+            <input name="align-items" type="radio" class="align-items" id="align-items3" value="center" /><label
+              for="align-items3">center</label>
+            <input name="align-items" type="radio" class="align-items" id="align-items4" value="baseline" /><label
+              for="align-items4">baseline</label>
+            <input name="align-items" type="radio" class="align-items" id="align-items5" value="stretch" checked/><label
+              for="align-items5">stretch</label>
+          </div>
+        </div>
+        <div class="container">
+          <div class="item one">Item #1</div>
+          <div class="item two">Item #2</div>
+          <div class="item three">Item #3</div>
+        </div>
+        <code>.container {
+  align-items: stretch;
+}</code>
+      </div>
+
+      <div class="justify-content">
+        <div class="controls">
+          <li>justify-content</li>
+          <div>
+            <input name="justify-content" type="radio" class="justify-content" id="justify-content1" value="flex-start"
+              checked /><label for="justify-content1">flex-start</label>
+            <input name="justify-content" type="radio" class="justify-content" id="justify-content2"
+              value="flex-end" /><label for="justify-content2">flex-end</label>
+            <input name="justify-content" type="radio" class="justify-content" id="justify-content3"
+              value="center" /><label for="justify-content3">center</label>
+            <input name="justify-content" type="radio" class="justify-content" id="justify-content4"
+              value="space-between" /><label for="justify-content4">space-between</label>
+            <input name="justify-content" type="radio" class="justify-content" id="justify-content5"
+              value="space-around" /><label for="justify-content5">space-around</label>
+          </div>
+        </div>
+        <div class="container">
+          <div class="item one">Item #1</div>
+          <div class="item two">Item #2</div>
+          <div class="item three">Item #3</div>
+        </div>
+        <code>.container {
+  justify-content: flex-start;
+}</code>
+      </div>
+
+      <div class="align-content">
+        <div class="controls">
+          <li>align-content</li>
+          <div>
+            <input name="align-content" type="radio" class="align-content" id="align-content1" value="flex-start"
+               /><label for="align-content1">flex-start</label>
+            <input name="align-content" type="radio" class="align-content" id="align-content2" value="flex-end" /><label
+              for="align-content2">flex-end</label>
+            <input name="align-content" type="radio" class="align-content" id="align-content3" value="center" /><label
+              for="align-content3">center</label>
+            <input name="align-content" type="radio" class="align-content" id="align-content4"
+              value="space-between" /><label for="align-content4">space-between</label>
+            <input name="align-content" type="radio" class="align-content" id="align-content5"
+              value="space-around" /><label for="align-content5">space-around</label>
+            <input name="align-content" type="radio" class="align-content" id="align-content6" value=" stretch"checked /><label
+              for="align-content6">stretch</label>
+          </div>
+        </div>
+        <div class="container">
+          <div class="item one">Item #1</div>
+          <div class="item two">Item #2</div>
+          <div class="item three">Item #3</div>
+          <div class="item one">Item #4</div>
+          <div class="item two">Item #5</div>
+          <div class="item three">Item #6</div>
+          <div class="item one">Item #7</div>
+          <div class="item two">Item #8</div>
+          <div class="item three">Item #9</div>
+        </div>
+        <code>.container {
+  align-content: stretch;
+}</code>
+      </div>
+
+      <div class="flex-wrap">
+        <div class="controls">
+          <li>flex-wrap</li>
+          <div>
+            <input name="flex-wrap" type="radio" class="flex-wrap" id="flex-wrap1" value="nowrap" checked /><label
+              for="flex-wrap1">nowrap</label>
+            <input name="flex-wrap" type="radio" class="flex-wrap" id="flex-wrap3" value="wrap" /><label
+              for="flex-wrap3">wrap</label>
+            <input name="flex-wrap" type="radio" class="flex-wrap" id="flex-wrap2" value="wrap-reverse" /><label
+              for="flex-wrap2">wrap-reverse</label>
+          </div>
+        </div>
+        <div class="container">
+          <div class="item one">Item #1</div>
+          <div class="item two">Item #2</div>
+          <div class="item three">Item #3</div>
+          <div class="item one">Item #4</div>
+          <div class="item two">Item #5</div>
+          <div class="item three">Item #6</div>
+          <div class="item one">Item #7</div>
+          <div class="item two">Item #8</div>
+        </div>
+        <code>.container {
+  flex-wrap: nowrap;
+}</code>
+      </div>
+    </div>
+
+    <div class="flex-items">
+      <h1>Flex Items properties</h1>
+      <br />
+      <div class="align-self">
+        <div class="controls">
+          <li>align-self</li>
+          <div>
+            (for Item#2)
+            <input name="align-self" type="radio" class="align-self" id="align-self0" value="auto"
+              checked /><label for="align-self0">auto</label>
+              <input name="align-self" type="radio" class="align-self" id="align-self1" value="flex-start"
+                 /><label for="align-self1">flex-start</label>
+            <input name="align-self" type="radio" class="align-self" id="align-self2" value="flex-end" /><label
+              for="align-self2">flex-end</label>
+            <input name="align-self" type="radio" class="align-self" id="align-self3" value="center" /><label
+              for="align-self3">center</label>
+            <input name="align-self" type="radio" class="align-self" id="align-self4" value="baseline" /><label
+              for="align-self4">baseline</label>
+            <input name="align-self" type="radio" class="align-self" id="align-self5" value="stretch" /><label
+              for="align-self5">stretch</label>
+          </div>
+        </div>
+        <div class="container">
+          <div class="item one">Item #1</div>
+          <div class="item two">Item #2</div>
+          <div class="item three">Item #3</div>
+        </div>
+        <code>.item2 {
+  align-self: auto;
+}</code>
+      </div>
+
+      <div class="flex-grow">
+        <div class="controls">
+          <li>flex-grow</li>
+          <div class="radio">
+            <span class="flex-grow"><label for="flex-grow1">Item #1 </label><input type="number" class="flex-grow" id="flex-grow1"
+                min="0" value="0"/></span>
+            <span class="flex-grow"><label for="flex-grow2">Item #2 </label><input type="number" class="flex-grow" id="flex-grow2"
+                min="0" value="0" /></span>
+            <span class="flex-grow"><label for="flex-grow3">Item #3 </label><input type="number" class="flex-grow" id="flex-grow3"
+                min="0"  value="0"/></span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="item one">Item #1</div>
+          <div class="item two">Item #2</div>
+          <div class="item three">Item #3</div>
+        </div>
+        <code>.item1 {
+  flex-grow: 0;
+}</code>
+      </div>
+
+      <div class="flex-shrink">
+        <div class="controls">
+          <li>flex-shrink</li>
+          <div class="radio">
+            <span class="flex-shrink"><label for="flex-shrink1">Item #1 </label><input type="number" class="flex-shrink" id="flex-shrink1"
+                min="1" value="1" /></span>
+            <span class="flex-shrink"><label for="flex-shrink2">Item #2 </label><input type="number" class="flex-shrink" id="flex-shrink2"
+                min="1" value="1" /></span>
+            <span class="flex-shrink"><label for="flex-shrink3">Item #3 </label><input type="number" class="flex-shrink" id="flex-shrink3"
+                min="1" value="1"/></span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="item one">Item #1</div>
+          <div class="item two">Item #2</div>
+          <div class="item three">Item #3</div>
+        </div>
+        <code>.item1 {
+  flex-shrink: 1;
+}</code>
+      </div>
+
+      <div class="flex-order">
+        <div class="controls">
+          <li>order</li>
+          <div class="radio">
+            <span class="flex-order"><label for="flex-order1">Item #1 </label><input type="number" class="flex-order" id="flex-order1"
+                min="0" value="0"/></span>
+            <span class="flex-order"><label for="flex-order2">Item #2 </label><input type="number" class="flex-order" id="flex-order2"
+                min="0" value="0"/></span>
+            <span class="flex-order"><label for="flex-order3">Item #3 </label><input type="number" class="flex-order" id="flex-order3"
+                min="0" value="0"/></span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="item one">Item #1</div>
+          <div class="item two">Item #2</div>
+          <div class="item three">Item #3</div>
+        </div>
+        <code>.item1 {
+  flex-order: 0;
+}</code>
+      </div>
+    </div>
+  </div>
+
+  <div class="main playground">
+    <div class="playground-controls">
+      <h1>Flex Playground</h1>
+
+      <div class="controls">
+        <li>flex-direction</li>
+        <div>
+          <input name="playground-flex-direction" type="radio" class="playground-flex-direction" id="playground-flex-direction1" value="row"
+            checked /><label for="playground-flex-direction1">row</label>
+          <input name="playground-flex-direction" type="radio" class="playground-flex-direction" id="playground-flex-direction2"
+            value="row-reverse" /><label for="playground-flex-direction2">row-reverse</label>
+          <input name="playground-flex-direction" type="radio" class="playground-flex-direction" id="playground-flex-direction3"
+            value="column" /><label for="playground-flex-direction3">column</label>
+          <input name="playground-flex-direction" type="radio" class="playground-flex-direction" id="playground-flex-direction4"
+            value="column-reverse" /><label for="playground-flex-direction4">column-reverse</label>
+        </div>
+      </div>
+
+      <div class="controls">
+        <li>align-items</li>
+        <div>
+          <input name="playground-align-items" type="radio" class="playground-align-items" id="playground-align-items1" value="flex-start"
+             /><label for="playground-align-items1">flex-start</label>
+          <input name="playground-align-items" type="radio" class="playground-align-items" id="playground-align-items2" value="flex-end" /><label
+            for="playground-align-items2">flex-end</label>
+          <input name="playground-align-items" type="radio" class="playground-align-items" id="playground-align-items3" value="center" /><label
+            for="playground-align-items3">center</label>
+          <input name="playground-align-items" type="radio" class="playground-align-items" id="playground-align-items4" value="baseline" /><label
+            for="playground-align-items4">baseline</label>
+          <input name="playground-align-items" type="radio" class="playground-align-items" id="playground-align-items5" value="stretch" checked/><label
+            for="playground-align-items5">stretch</label>
+        </div>
+      </div>
+
+      <div class="controls">
+        <li>justify-content</li>
+        <div>
+          <input name="playground-justify-content" type="radio" class="playground-justify-content" id="playground-justify-content1" value="flex-start"
+            checked /><label for="playground-justify-content1">flex-start</label>
+          <input name="playground-justify-content" type="radio" class="playground-justify-content" id="playground-justify-content2"
+            value="flex-end" /><label for="playground-justify-content2">flex-end</label>
+          <input name="playground-justify-content" type="radio" class="playground-justify-content" id="playground-justify-content3"
+            value="center" /><label for="playground-justify-content3">center</label>
+          <input name="playground-justify-content" type="radio" class="playground-justify-content" id="playground-justify-content4"
+            value="space-between" /><label for="playground-justify-content4">space-between</label>
+          <input name="playground-justify-content" type="radio" class="playground-justify-content" id="playground-justify-content5"
+            value="space-around" /><label for="playground-justify-content5">space-around</label>
+        </div>
+      </div>
+
+      <div class="controls">
+        <li>align-content</li>
+        <div>
+          <input name="playground-align-content" type="radio" class="playground-align-content" id="playground-align-content1" value="flex-start"
+             /><label for="playground-align-content1">flex-start</label>
+          <input name="playground-align-content" type="radio" class="playground-align-content" id="playground-align-content2" value="flex-end" /><label
+            for="playground-align-content2">flex-end</label>
+          <input name="playground-align-content" type="radio" class="playground-align-content" id="playground-align-content3" value="center" /><label
+            for="playground-align-content3">center</label>
+          <input name="playground-align-content" type="radio" class="playground-align-content" id="playground-align-content4"
+            value="space-between" /><label for="playground-align-content4">space-between</label>
+          <input name="playground-align-content" type="radio" class="playground-align-content" id="playground-align-content5"
+            value="space-around" /><label for="playground-align-content5">space-around</label>
+          <input name="playground-align-content" type="radio" class="playground-align-content" id="playground-align-content6" value=" stretch"checked /><label
+            for="playground-align-content6">stretch</label>
+        </div>
+      </div>
+
+      <div class="controls">
+        <li>flex-wrap</li>
+        <div>
+          <input name="playground-flex-wrap" type="radio" class="playground-flex-wrap" id="playground-flex-wrap1" value="nowrap" checked /><label
+            for="playground-flex-wrap1">nowrap</label>
+          <input name="playground-flex-wrap" type="radio" class="playground-flex-wrap" id="playground-flex-wrap3" value="wrap" /><label
+            for="playground-flex-wrap3">wrap</label>
+          <input name="playground-flex-wrap" type="radio" class="playground-flex-wrap" id="playground-flex-wrap2" value="wrap-reverse" /><label
+            for="playground-flex-wrap2">wrap-reverse</label>
+        </div>
+      </div>
+
+      <div class="controls">
+        <li>align-self</li>
+        <div>
+          (for Item#2)
+          <input name="playground-align-self" type="radio" class="playground-align-self" id="playground-align-self0" value="auto"
+            checked /><label for="playground-align-self0">auto</label>
+            <input name="playground-align-self" type="radio" class="playground-align-self" id="playground-align-self1" value="flex-start"
+               /><label for="playground-align-self1">flex-start</label>
+          <input name="playground-align-self" type="radio" class="playground-align-self" id="playground-align-self2" value="flex-end" /><label
+            for="playground-align-self2">flex-end</label>
+          <input name="playground-align-self" type="radio" class="playground-align-self" id="playground-align-self3" value="center" /><label
+            for="playground-align-self3">center</label>
+          <input name="playground-align-self" type="radio" class="playground-align-self" id="playground-align-self4" value="baseline" /><label
+            for="playground-align-self4">baseline</label>
+          <input name="playground-align-self" type="radio" class="playground-align-self" id="playground-align-self5" value="stretch" /><label
+            for="playground-align-self5">stretch</label>
+        </div>
+      </div>
+
+      <div class="controls">
+        <li>flex-grow</li>
+        <div class="radio">
+          <span class="playground-flex-grow"><label for="playground-flex-grow1">Item #1 </label><input type="number" class="playground-flex-grow" id="playground-flex-grow1"
+              min="0" value="0"/></span>
+          <span class="playground-flex-grow"><label for="playground-flex-grow2">Item #2 </label><input type="number" class="playground-flex-grow" id="playground-flex-grow2"
+              min="0" value="0" /></span>
+          <span class="playground-flex-grow"><label for="playground-flex-grow3">Item #3 </label><input type="number" class="playground-flex-grow" id="playground-flex-grow3"
+              min="0"  value="0"/></span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <li>flex-shrink</li>
+        <div class="radio">
+          <span class="playground-flex-shrink"><label for="playground-flex-shrink1">Item #1 </label><input type="number" class="playground-flex-shrink" id="playground-flex-shrink1"
+              min="1" value="1" /></span>
+          <span class="playground-flex-shrink"><label for="playground-flex-shrink2">Item #2 </label><input type="number" class="playground-flex-shrink" id="playground-flex-shrink2"
+              min="1" value="1" /></span>
+          <span class="playground-flex-shrink"><label for="playground-flex-shrink3">Item #3 </label><input type="number" class="playground-flex-shrink" id="playground-flex-shrink3"
+              min="1" value="1"/></span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <li>order</li>
+        <div class="radio">
+          <span class="playground-flex-order"><label for="playground-flex-order1">Item #1 </label><input type="number" class="playground-flex-order" id="playground-flex-order1"
+              min="0" value="0"/></span>
+          <span class="playground-flex-order"><label for="playground-flex-order2">Item #2 </label><input type="number" class="playground-flex-order" id="playground-flex-order2"
+              min="0" value="0"/></span>
+          <span class="playground-flex-order"><label for="playground-flex-order3">Item #3 </label><input type="number" class="playground-flex-order" id="playground-flex-order3"
+              min="0" value="0"/></span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button value="Add more items" id="addItems">Add Items</button>
+      </div>
+    </div>
+
+    <div class="output">
+      <div class="container">
+        <div class="item one">Item #1</div>
+        <div class="item two">Item #2</div>
+        <div class="item three">Item #3</div>
+        <div class="item hide one">Item #4</div>
+        <div class="item hide two">Item #5</div>
+        <div class="item hide three">Item #6</div>
+        <div class="item hide one">Item #7</div>
+        <div class="item hide two">Item #8</div>
+      </div>
+
+      <code>.container {
+    flex-direction: row;
+}
+
+.item {
+
+}</code>
+    </div>
+
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>

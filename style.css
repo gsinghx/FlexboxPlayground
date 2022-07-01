@@ -1,0 +1,112 @@
+.controls {
+  margin-bottom: 10px;
+}
+.controls li{
+  font-size: 1.2rem;;
+  margin-bottom: 10px;
+}
+.controls div.radio input {
+  width: 40px;
+}
+.container {
+  display: flex;
+  border-radius: 3px;
+  background: #242739;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.5);
+  box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+  margin-top: 15px;
+}
+/* .container::before{
+  content:"Container";
+} */
+.item {
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 3px;
+  /* background: #E5DDCB; */
+  margin: 5px;
+  padding: 20px;
+  text-align:center;
+  font-size: 1rem;
+  width: 50px;
+  height: auto;
+  color: #fff;
+}
+.one {
+  background: #595151;
+}
+.two {
+  background: #A32C28;
+
+}
+.three {
+  background: #5E8271;
+
+}
+
+.align-items .container {
+  height: 150px;
+}
+.align-items .container .item{
+  height: auto;
+}
+
+.align-items .container .two{
+  padding: 40px 20px;
+}
+.align-content .container {
+  height: 400px;
+  flex-wrap: wrap;
+}
+
+.align-content .container .item{
+  height: auto;
+}
+.align-self .container {
+  height: 250px;
+  align-items: center;
+}
+.align-self .container .two{
+  padding: 40px 20px;
+
+}
+.flex-shrink .container .item {
+  width: 30%;
+}
+
+.playground .controls {
+  margin-bottom: 20px;
+}
+.playground .container{
+  height: 300px;
+}
+.playground .output{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.playground .output, .playground-controls {
+  width: 40%;
+}
+.playground .container .hide {
+  display: none;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.flex-container, .flex-items{
+  width: 40%;
+}
+code {
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  display: block;
+  white-space: pre-wrap;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  padding: 25px;
+}
