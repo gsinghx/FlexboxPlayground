@@ -53,7 +53,7 @@ window.onload = function () {
     case 'playground':
       mainElement.style.display = 'none';
       document.querySelector(".playground h1").style.display='none';
-      playgroundElement.style.flexDirection="column";
+      playgroundElement.style.flexDirection="row";
       playgroundElement.style.marginBottom="0px";
       playgroundElement.style.padding="20px";
       document.querySelector(".playground-controls").style.width='100%';
