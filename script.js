@@ -34,6 +34,7 @@ window.onload = function () {
     case 'flex-grow':
     case 'flex-shrink':
     case 'flex-order':
+    case 'flex-basis':
       playgroundElement.style.display = 'none';
       containerElement.style.display = 'none';
       document.querySelector(".flex-items h1").style.display='none';
@@ -88,7 +89,7 @@ function changeFlexItemProperty(className, cssPropertyName) {
   }
 }
 
-function changeFlexItemPropertyNumber(className, cssPropertyName) {
+function changeFlexItemPropertyNumber(className, cssPropertyName, units) {
   let selector = "." + className + " .container .item"
 
   let radios = document.querySelectorAll('input.' + className);
@@ -96,8 +97,12 @@ function changeFlexItemPropertyNumber(className, cssPropertyName) {
 
   for (let i = 0; i < radios.length; i++) {
     radios[i].addEventListener("change", function () {
-      flexItems[i].style[cssPropertyName] = this.value;
-      document.querySelector("." + className + " code").innerHTML = ".item1 { \n &nbsp;" + className + ": " + this.value + "; \n}"
+      if(units!==undefined){
+        flexItems[i].style[cssPropertyName] = this.value + "%";
+      }else{
+        flexItems[i].style[cssPropertyName] = this.value;
+      }
+      document.querySelector("." + className + " code").innerHTML = ".item1 { \n &nbsp;" + className + ": " + this.value + (units?units:'') + "; \n}"
     })
   }
 }
@@ -112,6 +117,7 @@ changeFlexItemProperty("align-self", "alignSelf")
 changeFlexItemPropertyNumber("flex-grow", "flexGrow")
 changeFlexItemPropertyNumber("flex-shrink", "flexShrink")
 changeFlexItemPropertyNumber("flex-order", "order")
+changeFlexItemPropertyNumber("flex-basis", "flexBasis", "%")
 
 let playgroundProps = {
   container: {},

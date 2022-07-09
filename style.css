@@ -76,6 +76,13 @@ body{
 .flex-shrink .container .item {
   width: 30%;
 }
+.flex-basis .container .item {
+  flex-basis: 20%;
+}
+
+.flex-basis .container .item:nth-child(2) {
+  flex-basis: 60%;
+}
 
 .playground .controls {
   margin-bottom: 20px;
