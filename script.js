@@ -33,7 +33,7 @@ window.onload = function () {
     case 'align-self':
     case 'flex-grow':
     case 'flex-shrink':
-    case 'flex-order':
+    case 'order':
     case 'flex-basis':
       playgroundElement.style.display = 'none';
       containerElement.style.display = 'none';
@@ -116,7 +116,7 @@ changeFlexContainerProperty("flex-wrap", "flexWrap");
 changeFlexItemProperty("align-self", "alignSelf")
 changeFlexItemPropertyNumber("flex-grow", "flexGrow")
 changeFlexItemPropertyNumber("flex-shrink", "flexShrink")
-changeFlexItemPropertyNumber("flex-order", "order")
+changeFlexItemPropertyNumber("order", "order")
 changeFlexItemPropertyNumber("flex-basis", "flexBasis", "%")
 
 let playgroundProps = {
